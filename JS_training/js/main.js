@@ -1,6 +1,11 @@
 /*## 1\.Exercice 1 : Hello World
 Afficher "Hello World" dans la console.
 Reproduire le même résultat, mais en déclarant une variable (du nom de votre choix) ayant pour valeur "Hello World".*/
+// 1
+console.log("Hello World");
+// 2
+var hello = "Hello World"
+console.log(hello);
 
 /*## 2\.Exercice 2 : Calculs divers
 Dans la console, afficher le résultats des opérations suivantes:
