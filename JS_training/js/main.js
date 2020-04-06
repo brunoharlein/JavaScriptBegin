@@ -33,6 +33,11 @@ console.log("Bonjour" + " " + name);
 Déclarer les variables 'nom' et 'prénom' et leur assigner votre nom et prénom.
 Afficher dans la console par exemple : "Bonjour John Doe"
 Attention aux espaces*/
+var nom = "Harlein";
+var prenom = "Bruno";
+
+console.log("Bonjour " + prenom +  " " + nom);
+
 
 /*## 5\.Exercice 5 : Des caractères au nombre
 Déclarer la variable myNumber = "123"
