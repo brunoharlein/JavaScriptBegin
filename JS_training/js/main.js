@@ -15,6 +15,12 @@ Dans la console, afficher le résultats des opérations suivantes:
 - 12-7
 - 5e4
 */
+console.log(3 * 3); // affiche 9
+console.log(12 / 0); //affiche Infinity
+console.log(4 + 9 + 78); //affiche 91
+console.log(12 - 7); //affiche 5
+console.log(5e4); //affiche 50000
+
 
 /*## 3\.Exercice 3 : Communiquer avec l'ordinateur
 L'heure est venue de commencer à communiquer avec l'ordinateur ! Ecrivez un programme qui demande son nom à l'utilisateur puis lui répond un message de bienvenue avec son nom.
