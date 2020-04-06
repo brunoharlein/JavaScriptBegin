@@ -114,6 +114,7 @@ age = age + nextAge;
 alert("A vous deux vous avez " + age + " ans");
 
 
+
 /*## 3\.Exercice 3 : Problème de chaussures
 Marc fait un peu de shopping. Il achète des chaussures à 70€, un jean à 59€ et un t-shirt à 20€.
 Heureusement pour son portefeuille, il bénéficie d'une réduction de 20%.
