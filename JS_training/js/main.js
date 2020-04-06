@@ -88,6 +88,31 @@ else {
 Réalisez un programme qui demande au visteur l'année actuelle, son année de naissance, calcule l'âge du visiteur puis l'affiche dans un message à l'écran.
 Pour aller plus loin, demandez l'âge de la personne à côté de vous et afficher dans un message le cumul de vos deux âges.*/
 
+// Get the current date and the birthDate by the user
+// Récupère la date actuelle et la date de naissance par l'utilisateur
+var currentDate =  prompt("En quelle année sommes-nous ?");
+var birthDate = prompt("Quand êtes-vous né ?");
+
+// Convert the strings into numbers
+// Convertit les chaînes en nombres
+currentDate =  Number(currentDate);
+birthDate = Number(birthDate);
+
+// Count the age of the user and show it
+// Comptez l'âge de l'utilisateur et montrez-le
+var age = currentDate - birthDate;
+alert("Vous avez " + age + " ans");
+
+// Get the age of the neighbour and convert it to number
+// Obtenir l'âge du voisin et le convertir en nombre
+var nextAge  = prompt("Quelle âge a la personne à côté de vous ?");
+nextAge = Number(nextAge);
+
+// Count the sum of the two ages and show it
+// Comptez la somme des deux âges et montrez-la
+age = age + nextAge;
+alert("A vous deux vous avez " + age + " ans");
+
 
 /*## 3\.Exercice 3 : Problème de chaussures
 Marc fait un peu de shopping. Il achète des chaussures à 70€, un jean à 59€ et un t-shirt à 20€.
