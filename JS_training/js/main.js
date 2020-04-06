@@ -25,6 +25,9 @@ console.log(5e4); //affiche 50000
 /*## 3\.Exercice 3 : Communiquer avec l'ordinateur
 L'heure est venue de commencer à communiquer avec l'ordinateur ! Ecrivez un programme qui demande son nom à l'utilisateur puis lui répond un message de bienvenue avec son nom.
 Astuce : vous pouvez afficher le message de différentes façons*/
+var name = prompt("Quel est votre nom ?");
+console.log("Bonjour" + " " + name);
+
 
 /*## 4\.Exercice 4 : Nom et prénom
 Déclarer les variables 'nom' et 'prénom' et leur assigner votre nom et prénom.
