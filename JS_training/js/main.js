@@ -91,7 +91,7 @@ Pour aller plus loin, demandez l'âge de la personne à côté de vous et affich
 // Get the current date and the birthDate by the user
 // Récupère la date actuelle et la date de naissance par l'utilisateur
 var currentDate =  prompt("En quelle année sommes-nous ?");
-var birthDate = prompt("Quand êtes-vous né ?");
+var birthDate = prompt("Votre année de naissance ?");
 
 // Convert the strings into numbers
 // Convertit les chaînes en nombres
@@ -120,6 +120,16 @@ Marc fait un peu de shopping. Il achète des chaussures à 70€, un jean à 59�
 Heureusement pour son portefeuille, il bénéficie d'une réduction de 20%.
 Déclarez chacun des articles achetés dans une variable différente. (prix1, prix2, etc.). Déclarez une dernière variable 'total' qui aura pour valeur la somme des achats, et l'afficher dans la console.
 Attention: ne pas oublier la réduction.*/
+
+var prix1 = 70;
+var prix2 = 59;
+var prix3 = 20;
+var total = prix1 + prix2 + prix3;
+
+alert("Le total est de : " + total);
+console.log(total*0.8);
+alert("Avec la réduction le total est de : " + total*0.8);
+
 
 /*## 4\.Exercice 4 : une calculatrice JavaScript
 Vous allez créer une mini calculatrice qui permet d'additionner des nombres.
