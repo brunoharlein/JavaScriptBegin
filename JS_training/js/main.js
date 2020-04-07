@@ -261,9 +261,24 @@ for(var i = 1; i <= 100; i++) {
 /*## 5\.Exercice 5 : Des nombres en boucle bis
 Créez une boucle allant de 1 à 100, et n'affichez dans la console que les chiffres pairs.*/
 
+for(var i = 1; i <= 100; i++) {
+  if(i%2 === 0) {
+    console.log(i);
+  }
+}
+
+
 
 /*## 6\.Exercice 6 : Remplir la piscine
 Ecrire une fonction en Javascript qui indique le temps de remplissage d'une piscine en fonction de sa longueur, sa largeur, sa profondeur, et du débit d'eau. Les longueurs sont en mètre (m), le débit en mètre cube par minute (m3/min) et le résultat attendu, le temps, en minute (min).*/
+
+function remplirPiscine(long, larg, prof, debit) {
+  var tempsRemplissage = (long*larg*prof)/debit;
+  alert("Le temps de remplissage est de " + tempsRemplissage + " minutes")
+}
+
+remplirPiscine(13, 5, 3, 12);
+
 
 
 /*## 7\.Exercice 7 : Calcul de cercle
@@ -271,6 +286,22 @@ Ecrire 2 fonctions, l'une retournant l'aire d'un cercle, l'autre son périmètre
 Le Rayon devra être entrer manuellement à l'aide d'un "prompt()".
 Les résultats des deux fonctions seront affichés dans la console.
 Pour aller plus loin, arrondissez les résultats à la deuxième décimale.*/
+
+function getPerimetre(rayon) {
+  var perimetre = (2 * Math.PI * rayon).toFixed(2);
+  console.log("Votre cercle a un perimètre de " + perimetre + " cm");
+}
+
+function getAire(rayon) {
+  var aire = (Math.sqrt(rayon) * Math.PI).toFixed(2);
+  console.log("Votre cercle a une aire de " + aire + " cm carrés");
+}
+
+var rayon = Number(prompt("Quel est le rayon de votre cercle ?"));
+
+getPerimetre(rayon);
+getAire(rayon);
+
 
 
 /*## 8\.Exercice 8 : Une pyramide
