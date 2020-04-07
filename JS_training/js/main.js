@@ -470,6 +470,19 @@ toUnderscore("attention-aux-tirets")
 Creéz un tableau qui contient tout les éléments de votre liste de course.
 Affichez ensuite dans la console un message disant que vous devez acheter l'élément en première position du tableau. Faites la même chose avec l'élément en dernière position du tableau (attention vous devez afficher le dernier élément peu importe la taille du tableau !) et avec un élément au milieu (celui que vous voulez).*/
 
+var shoppingList = [
+  "pâtes",
+  "riz",
+  "viande",
+  "coca",
+  "haricots"
+];
+
+console.log("Il faut acheter : " + shoppingList[0]);
+console.log("Il faut acheter : " + shoppingList[shoppingList.length - 1]);
+console.log("Il faut acheter : " + shoppingList[2]);
+
+
 /*## 7\.Exercice 7 : Le tableau d'un homme
 Vous allez créer un programme avec un tableau qui contient les informations principales d'un être humain, c'est à dire son nom, son prénom, son âge et sa date de naissance.
 Remplissez ce tableau avec les valeurs que vous souhaitez !
@@ -479,15 +492,74 @@ Notre tableau précédent ne pouvait stocker les informations que d'une seule pe
 Ces informations seront elles-mêmes stockées dans d'autres tableaux (un par personne).
 Vous pensiez ne jamais utiliser les tableaux multi-dimensionnels ? ;-)*/
 
+var people = [
+  [
+    "Paul",
+    "Homme",
+    44
+  ],
+  [
+    "Stephanie",
+    "Femme",
+    32
+  ],
+  [
+    "Marc",
+    "Homme",
+    24
+  ]
+];
+
+function showPeople(arrayPeople) {
+  for(var i = 0; i < arrayPeople.length; i++) {
+    var singlePeople = arrayPeople[i];
+    for(var j = 0; j < singlePeople.length; j++ ) {
+      console.log(singlePeople[j]);
+    }
+  }
+}
+
+  showPeople(people);
+
+
 /*## 8\.Exercice 8 : Le max d'un tableau
 Ecrivez une fonction qui parcourt un tableau de nombres et affiche dans la console la plus grande valeur de ce tableau.
 **Pour aller plus loin**:
 Faites en sorte que votre tableau puisse contenir également des chaînes de caractères. La fonction affichera alors la plus longue.
 Attention, il faudra d'abord vérifier que votre tableau ne contient que des chiffres ou que des strings, autrement la fonction affichera false.*/
 
+var arrayOfNumbers = [12, 45, 190, 150, 8, 21];
+
+function findBiggestNumber(numbers) {
+  var biggestNumber = 0;
+  for(var i = 0; i<numbers.length; i++) {
+    if(numbers[i] > biggestNumber) {
+      biggestNumber = numbers[i];
+    }
+  }
+  console.log(biggestNumber);
+}
+
+findBiggestNumber(arrayOfNumbers);
+
+
 /*## 9\.Exercice 9 : Une to do list
 Ecrivez un programme qui demande à l'utilisateur les tâches qu'il doit réaliser avec un prompt, tant qu'il n'a pas rentré "fin" comme réponse.
 Les tâches rentrées via le prompt seront stockées dans un tableau et une fois que l'utilisateur aura répondu "fin" vous afficherez les tâches à réaliser dans la console.*/
+
+var tasks = [];
+
+var task;
+
+while(task !== "fin") {
+  task = prompt("Que devez-vous faire ?");
+  tasks.push(task);
+}
+
+for(var i=0; i < tasks.length; i++) {
+  console.log(tasks[i]);
+}
+
 
 /*## 10\.Exercice 10 : Un jeu en JavaScript
 Vous allez réaliser un jeu de pierre, feuille, ciseaux en JavaScript.
