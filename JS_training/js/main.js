@@ -169,6 +169,28 @@ console.log("Divisé par 33 cela donner " + age);
 Déclarer 4 variables ayant chacune pour valeur un chiffre différent.
 Ecrire un programme renvoyant dans la console la valeur la plus élevée.*/
 
+var firstNumber = 1;
+var secondNumber = 2;
+var thirdNumber = 65;
+var fourthNumber = 64;
+
+function bigNumber(a, b, c, d) {
+  if(a > b && a > c && a > d) {
+    console.log(a);
+  }
+  else if(b > a && b > c && b > d) {
+    console.log(b)
+  }
+  else if(c > a && c > b && c > d) {
+    console.log(c);
+  }
+  else {
+    console.log(d);
+  }
+}
+
+bigNumber(firstNumber, secondNumber, thirdNumber, fourthNumber);
+
 
 /*## 2\.Exercice 2 : Conditon d'âge
 Ecrire un programme JavaScript qui demande son âge à l'utilisateur. Si l'utilisateur a rentré quelque chose et que :
@@ -179,10 +201,47 @@ Ecrire un programme JavaScript qui demande son âge à l'utilisateur. Si l'utili
 Sinon affichez un message d'erreur s'il n'a rien rentré
 Attention à l'ordre dans lequel vous effectuez vos tests !*/
 
+var userAge = Number(prompt("Quel âge avez-vous ?"));
+if(userAge !== 0) {
+  if(userAge <= 0) {
+    alert("Rentrez votre vrai âge !");
+  }
+  if (userAge >= 21) {
+    alert("vous pouvez entrer !");
+  }
+  if(userAge%2 === 0) {
+    alert("Votre âge est paire");
+  }
+  if(Number.isInteger(Math.sqrt(userAge))) {
+    alert("Votre âge est un carré");
+  }
+}
+else {
+  alert("Vous n'avez rien rentré !")
+}
+
+
 
 /*## 3\.Exercice 3 : Le nombre caché
 Stockez un nombre entier de votre choix dans une variable. Ecrivez ensuite un programme qui demande à l'utilisateur de deviner ce nombre.
 Si l'utilisateur trouve le bon nombre vous lui annoncez qu'il a gagné. Sinon vous lui dites si son nombre est plus grand ou plus petit que le nombre caché. Tant que l'utilisateur n'a pas trouvé le bon nombre vous lui reposez la question.*/
+
+var hiddenNumber = 17;
+var userGuess = null;
+
+while(hiddenNumber !== userGuess) {
+  userGuess = Number(prompt("Quel est le nombre caché ?"));
+  if(userGuess > hiddenNumber) {
+    alert("Trop haut !");
+  }
+  else if (userGuess < hiddenNumber) {
+    alert("Trop bas");
+  }
+  else {
+    alert("Trouvé !");
+  }
+}
+
 
 
 /*## 4\.Exercice 4 : Des nombres en boucle
@@ -192,6 +251,11 @@ Exemple :
 2
 3
 ...*/
+
+for(var i = 1; i <= 100; i++) {
+  console.log(i);
+}
+
 
 
 /*## 5\.Exercice 5 : Des nombres en boucle bis
